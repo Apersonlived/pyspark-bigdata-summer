@@ -134,7 +134,7 @@ def create_query_tables(output_dir, artists_df, recommendations_df, tracks_df, l
 if __name__ == "__main__":
     logger = setup_logging("transform.log")
 
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 8:
         logger.info("Usage: python script.py <input_dir> <output_dir>")
         sys.exit(1)
 

@@ -132,7 +132,7 @@ def load_to_postgres(spark, input_dir, pg_un, pg_pw):
 
 if __name__ == "__main__":
     logger = setup_logging("load.log")
-    if len(sys.argv) != 7:
+    if len(sys.argv) != 12:
         logger.error("Usage: python load/executr.py <input_dir><pg_un><pg_pw><pg_p>,<pg_h><pg_db")
         sys.exit(1)
 
