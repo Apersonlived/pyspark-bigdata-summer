@@ -1,0 +1,5 @@
+.vscode
+_pycache_
+*.log
+home/ekatabaral/Data/extract/
+home/ekatabaral/Data/transform/
