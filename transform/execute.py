@@ -150,7 +150,7 @@ if __name__ == "__main__":
 
     logger.info("Starting transform stage")
     start = time.time()
-    spark = create_spark_session(logger)
+    spark = create_spark_session(spark_config, logger)
 
     artists_df, recommendations_df, tracks_df = load_and_clean(spark, input_dir, output_dir, logger)
     create_master_table(output_dir, artists_df, recommendations_df, tracks_df, logger)

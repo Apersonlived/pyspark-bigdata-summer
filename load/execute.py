@@ -156,7 +156,7 @@ if __name__ == "__main__":
     logger.info("Load stage has started")
     start = time.time()
 
-    spark = create_spark_session(logger)
+    spark = create_spark_session(logger, spark_config)
     create_postgres_tables(logger, pg_un, pg_pw, pg_p, pg_h, pg_db)
     load_to_postgres(spark, input_dir, pg_un, pg_pw)
 
